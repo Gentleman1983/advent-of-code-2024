@@ -91,8 +91,8 @@ class CrossedWires(private var filename: String) {
                             }
                     }
 
-                    if (cright!!.startsWith(IDENTIFIER_SOLUTION_WIRES)) {
-                        swap(cright!!, sum, swapped)
+                    if (cright.startsWith(IDENTIFIER_SOLUTION_WIRES)) {
+                        swap(cright, sum, swapped)
                             .also { (a, b) ->
                                 sum = a
                                 cright = b
